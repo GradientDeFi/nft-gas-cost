@@ -4,3 +4,11 @@ out = 'out'
 libs = ['lib']
 
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
+
+gas_reports = ["*"]
+
+[profile.default.optimizer_details]
+optimizer = true
+optimizer_runs = 10_000
+constantOptimizer = true
+yul = true
