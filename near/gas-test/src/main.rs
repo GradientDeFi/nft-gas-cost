@@ -61,10 +61,10 @@ async fn main() -> anyhow::Result<()> {
     );
     println!(
         "converted to NEAR: {}",
-        // burnt gas to NEAR => gas * 10^(-15)
+        // burnt gas to NEAR => gas * 10^(-16)
         // 1 TGas = 10^12 gas unit
-        // 1 NEAR = 10^3 TGas (1 NEAR = 10^3 milliNEAR = 10^4 TGas)
-        outcome.total_gas_burnt as f64 / 1_000_000_000_000_000.0
+        // 1 NEAR = 10^4 TGas (1 NEAR = 10^3 milliNEAR = 10^4 TGas)
+        outcome.total_gas_burnt as f64 / 10_000_000_000_000_000.0
     );
 
     // let result: serde_json::Value = worker.view(nft_contract.id(), "nft_metadata").await?.json()?;
