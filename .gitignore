@@ -9,3 +9,11 @@ out/
 
 # Dotenv file
 .env
+.env.local
+.env.development
+.env.test
+
+# Misc.
+.DS_Store
+.vscode
+.idea
