@@ -1,0 +1,1 @@
+From [near examples NFT integration tests](https://github.com/near-examples/NFT/tree/master/integration-tests/rs)
