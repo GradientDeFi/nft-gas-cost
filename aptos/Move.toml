@@ -1,0 +1,25 @@
+[package]
+name = "nft_mint_cost"
+version = "0.0.1"
+
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/aptos-framework'
+
+[dependencies.AptosToken]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/aptos-token'
+
+[addresses]
+aptos_framework = "0x1"
+source_addr = "0xcafe"
+nft_mint_cost = "0x9416d500365e29d640664b031081a815d7bbe6500d55fc3c0d2722305b5c8669"
+admin_addr = "0xbeef"
+#source_addr = "_"
+#mint_nft = "_"
+
+[dev-addresses]
+source_addr = "0xcafe"
+nft_mint_cost = "0x9416d500365e29d640664b031081a815d7bbe6500d55fc3c0d2722305b5c8669"
